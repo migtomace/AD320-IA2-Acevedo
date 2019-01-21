@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Franklin|Noto+Sans+KR|Oxygen|Quicksand|Rubik" rel="stylesheet">
+</head>
+<body>
+<form action="fh.php" method="get" onsubmit="return validate()" name="form">
+    <div class="row">
+        <label>Full Name:</label>
+        <input type="text" name="name" placeholder="John Doe">
+        <div class="req" id="nameReq"></div>
+    </div>
+    <div class="row">
+        <label>Email:</label>
+        <input type="email" name="email" placeholder="user@example.com">
+        <div class="req" id="emailReq"></div>
+    </div>
+    <div class="row">
+        <label>Phone Number:</label>
+        <input type="text" name="phone" placeholder="999-999-9999">
+        <div class="req"></div>
+    </div>
+    <div class="row">
+        <label>State of Residence:</label>
+        <input type="text" name="state" placeholder="Washington">
+        <div class="req"></div>
+    </div>
+    <div class="buttons">
+        <div class="space"></div>
+        <input type="reset" value="Reset" onclick="clear()">
+        <input type="submit" value="Submit!">
+        <div class="req"></div>
+    </div>
+
+</form>
+<script src="main.js"></script>
+</body>
+</html>

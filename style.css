@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: #efefef;
+    margin: 4em auto 0 auto;
+    min-height: 100%;
+    letter-spacing: 4px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+form {
+    width: 50%;
+    border-radius: 15px;
+    background: #CC5E19;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+    padding: 1em;
+    margin: auto;
+}
+.row {
+    display: flex;
+    margin: 1em;
+}
+.row label, .row input{
+    flex: 2;
+}
+.row .req {
+    flex: 1;
+}
+.buttons {
+    width: 100%;
+    display: flex;
+}
+.buttons .space {
+    flex: 5;
+}
+.buttons input{
+    flex: 1;
+}
+.buttons .req {
+    flex: 3;
+}
+input, label {
+    border-radius: 5px;
+    padding: 2px;
+    line-height: 1.5em;
+}
+input {
+    margin: 0 1em;
+
+}
+input::placeholder {
+    letter-spacing: 1px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+input[type='reset'], input[type='submit']  {
+    font-family: 'Noto Sans KR', sans-serif;
+    letter-spacing: 3px;
+}
+input:hover  {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.46);
+}
