@@ -1,5 +1,6 @@
 
 function validate() {
+    clearForm();
     var bool = true;
 
     var name = document.forms["form"]["name"].value;
@@ -17,7 +18,8 @@ function validate() {
     return bool;
 }
 
-function clear() {
+function clearForm() {
     document.getElementById('nameReq').innerHTML = "";
     document.getElementById('emailReq').innerHTML = "";
+    console.log("clear function");
 }
