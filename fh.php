@@ -16,7 +16,7 @@ $email = $_GET['email'];
 $phone = $_GET['phone'];
 $state = $_GET['state'];
 
-echo "<ul>
+echo "<ul style='list-style-type: none'>
         <li>Name: ".$name."</li>
         <li>Email: ".$email."</li>";
 
