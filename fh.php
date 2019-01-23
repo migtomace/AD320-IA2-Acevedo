@@ -18,7 +18,13 @@ $state = $_GET['state'];
 
 echo "<ul>
         <li>Name: ".$name."</li>
-        <li>Email: ".$email."</li>
-        <li>Phone: ".$phone."</li>
-        <li>State: ".$state."</li>
+        <li>Email: ".$email."</li>";
+
+if ($phone != null || $phone != ""){
+    echo "<li>Phone: ".$phone."</li>";
+}
+if ($state != null || $state != ""){
+    echo "<li>State: ".$state."</li>
     </ul>";
+}
+
